@@ -3,36 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Capa_Negocios;
 
-namespace Capa_Negocios
-{
-    public class ProveedorInternacional : PROVEEDOR
+    namespace Capa_Negocios
     {
-        public string Pasaporte { get; set; }
-
-        public ProveedorInternacional(string pasaporte, string nombre, string telefono, string producto)
-            : base(nombre, telefono, producto)
+        // ✅ Herencia: esta clase hereda de PROVEEDOR
+        public class ProveedorInternacional : PROVEEDOR
         {
-            Pasaporte = pasaporte;
-        }
+            // ✅ Constructor: llama al constructor base con tipo "INTERNACIONAL"
+            public ProveedorInternacional(string rnc, string nombre, string telefono, string producto)
+                : base(rnc, nombre, telefono, producto, "INTERNACIONAL")
+            {
+            }
 
-        // Implementación de los métodos abstractos
+            // ✅ Implementación obligatoria de métodos abstractos
+            public override string ObtenerIdentificadorPrincipal() => RNC;
 
-        public override string ObtenerIdentificadorPrincipal()
-        {
-            // El Pasaporte se guardará en la columna RNC de la BD
-            return Pasaporte;
-        }
+            // ✅ Validación personalizada: el pasaporte no puede ser nulo ni vacío
+            public override bool EsValido() =>
+                !string.IsNullOrWhiteSpace(RNC);
 
-        public override bool EsValido()
-        {
-            // Regla de negocio: Pasaporte no puede estar vacío.
-            return !string.IsNullOrWhiteSpace(Pasaporte);
-        }
-
-        public override string ObtenerTipo()
-        {
-            return "INTERNACIONAL"; // Coincide con tu BD
+            public override string ObtenerTipo() => "INTERNACIONAL";
         }
     }
-}

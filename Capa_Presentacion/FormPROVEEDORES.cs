@@ -89,7 +89,7 @@ namespace Capa_Presentacion
 
         }
 
-       private void btnELIMINAR2_Click(object sender, EventArgs e)
+        private void btnELIMINAR2_Click(object sender, EventArgs e)
         {
             if (dgvProveedores.CurrentRow == null)
             {
@@ -114,8 +114,12 @@ namespace Capa_Presentacion
                     MessageBox.Show("Error al eliminar: " + ex.Message);
                 }
             }
-       }
+        }
 
-
+        private void btnIRALISTATEMPORAL_Click_1(object sender, EventArgs e)
+        {
+            FormLISTATEMPORAL formTemporal = new FormLISTATEMPORAL();
+            formTemporal.ShowDialog();
+        }
     }
 }

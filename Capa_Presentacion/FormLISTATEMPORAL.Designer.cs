@@ -123,15 +123,15 @@
             dgvLISTATEMPORAL.RowHeadersWidth = 51;
             dgvLISTATEMPORAL.Size = new Size(730, 296);
             dgvLISTATEMPORAL.TabIndex = 16;
-            dgvLISTATEMPORAL.CellMouseClick += dgvProveedores_CellMouseClick;
+            dgvLISTATEMPORAL.CellMouseClick += dgvLISTATEMPORAL_CellMouseClick;
             // 
             // btnREGISTRARLISTATEMP
             // 
-            btnREGISTRARLISTATEMP.Location = new Point(324, 448);
+            btnREGISTRARLISTATEMP.Location = new Point(388, 448);
             btnREGISTRARLISTATEMP.Name = "btnREGISTRARLISTATEMP";
-            btnREGISTRARLISTATEMP.Size = new Size(201, 29);
+            btnREGISTRARLISTATEMP.Size = new Size(94, 29);
             btnREGISTRARLISTATEMP.TabIndex = 17;
-            btnREGISTRARLISTATEMP.Text = "Registrar en lista temporal\r\n";
+            btnREGISTRARLISTATEMP.Text = "Registrar ";
             btnREGISTRARLISTATEMP.UseVisualStyleBackColor = true;
             btnREGISTRARLISTATEMP.Click += btnREGISTRAR_Click;
             // 
@@ -200,12 +200,13 @@
             // 
             // btnEDITAR
             // 
-            btnEDITAR.Location = new Point(171, 450);
+            btnEDITAR.Location = new Point(220, 448);
             btnEDITAR.Name = "btnEDITAR";
-            btnEDITAR.Size = new Size(120, 29);
+            btnEDITAR.Size = new Size(94, 29);
             btnEDITAR.TabIndex = 26;
             btnEDITAR.Text = "Editar";
             btnEDITAR.UseVisualStyleBackColor = true;
+            btnEDITAR.Click += btnEDITAR_Click;
             // 
             // cmbTipoProveedor
             // 
@@ -241,7 +242,7 @@
             Controls.Add(lblRNC);
             Name = "FormLISTATEMPORAL";
             Text = "FormLISTATEMPORAL";
-            Load += FormPROVEEDORES_Load;
+            Load += FormLISTATEMPORAL_Load;
             ((System.ComponentModel.ISupportInitialize)dgvLISTATEMPORAL).EndInit();
             ResumeLayout(false);
             PerformLayout();
