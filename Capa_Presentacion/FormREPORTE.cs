@@ -56,10 +56,10 @@ namespace Capa_Presentacion
             int totalProveedores = totalLocales + totalInternacionales;
             int totalProductosUnicos = productosUnicos.Count;
 
-            lblTotalProveedores.Text = totalProveedores.ToString();
-            lblLOCALES.Text = totalLocales.ToString();
-            lblINTERNACIONALES.Text = totalInternacionales.ToString();
-            lblTOTALPRODUCTOS.Text = totalProductosUnicos.ToString();
+            lblTotalProveedores.Text = "Total Proveedores: " + totalProveedores.ToString();
+            lblLOCALES.Text = "Total Proveedores Locales: " + totalLocales.ToString();
+            lblINTERNACIONALES.Text = "Total Proveedores Internacionales: " + totalInternacionales.ToString();
+            lblTOTALPRODUCTOS.Text = "Total Productos: " + totalProductosUnicos.ToString();
 
             if (totalLocales == 0 && totalInternacionales == 0 && totalProductosUnicos == 0)
             {
@@ -70,9 +70,9 @@ namespace Capa_Presentacion
             // 🖼️ Graficar con ScottPlot 5.x
             FormsPlot1.Plot.Clear();
 
-            double[] alturas = { totalLocales, totalInternacionales, totalProductosUnicos };
-            string[] etiquetas = { "Locales", "Internacionales", "Productos únicos" };
-            double[] posiciones = { 0, 1, 2 };
+            double[] alturas = { totalLocales, totalInternacionales, totalProveedores, totalProductosUnicos };
+            string[] etiquetas = { $"Locales ({totalLocales})", $"Internacionales ({totalInternacionales})", $"Total Proveedores ({totalProveedores})", $"Productos ({totalProductosUnicos})" };
+            double[] posiciones = { 0, 1, 2, 3 };
 
             // Limpiar y preparar el gráfico
             FormsPlot1.Plot.Clear();
@@ -80,8 +80,9 @@ namespace Capa_Presentacion
             // Crear gráfico de barras
             var barras = FormsPlot1.Plot.Add.Bars(values: alturas);
 
-            // Estilizar las barra
+            barras.ValueLabelStyle.IsVisible = false;
 
+            // Estilizar las barra
             barras.ValueLabelStyle.PointFilled = true; // Set to true if you want points to be filled
             barras.ValueLabelStyle.ForeColor = new ScottPlot.Color(30, 144, 255, 150); // Color del texto de las etiquetas de valor
             barras.ValueLabelStyle.BorderColor = new ScottPlot.Color(0, 0, 0); // Bordes negros
@@ -90,12 +91,12 @@ namespace Capa_Presentacion
             // Posicionar etiquetas del eje X
             FormsPlot1.Plot.Axes.Bottom.TickGenerator = new ScottPlot.TickGenerators.NumericManual(posiciones, etiquetas);
 
+
             // Agregar títulos
             FormsPlot1.Plot.Title("Reporte de Proveedores y Productos");
             FormsPlot1.Plot.YLabel("Cantidad");
             FormsPlot1.Plot.XLabel("Categorías");
 
-           
 
             // Mostrar el gráfico
             FormsPlot1.Refresh();

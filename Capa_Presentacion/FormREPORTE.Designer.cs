@@ -50,44 +50,48 @@
             // lblLOCALES
             // 
             lblLOCALES.AutoSize = true;
-            lblLOCALES.Location = new Point(337, 88);
+            lblLOCALES.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblLOCALES.Location = new Point(276, 88);
             lblLOCALES.Name = "lblLOCALES";
-            lblLOCALES.Size = new Size(184, 20);
+            lblLOCALES.Size = new Size(219, 23);
             lblLOCALES.TabIndex = 2;
             lblLOCALES.Text = "Total Proveedores Locales:";
             // 
             // lblINTERNACIONALES
             // 
             lblINTERNACIONALES.AutoSize = true;
-            lblINTERNACIONALES.Location = new Point(693, 88);
+            lblINTERNACIONALES.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblINTERNACIONALES.Location = new Point(624, 88);
             lblINTERNACIONALES.Name = "lblINTERNACIONALES";
-            lblINTERNACIONALES.Size = new Size(235, 20);
+            lblINTERNACIONALES.Size = new Size(282, 23);
             lblINTERNACIONALES.TabIndex = 3;
             lblINTERNACIONALES.Text = "Total Proveedores Internacionales:";
             // 
             // lblTOTALPRODUCTOS
             // 
             lblTOTALPRODUCTOS.AutoSize = true;
-            lblTOTALPRODUCTOS.Location = new Point(1098, 88);
+            lblTOTALPRODUCTOS.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTOTALPRODUCTOS.Location = new Point(1027, 88);
             lblTOTALPRODUCTOS.Name = "lblTOTALPRODUCTOS";
-            lblTOTALPRODUCTOS.Size = new Size(115, 20);
+            lblTOTALPRODUCTOS.Size = new Size(139, 23);
             lblTOTALPRODUCTOS.TabIndex = 4;
             lblTOTALPRODUCTOS.Text = "Total Productos:";
             // 
             // lblTotalProveedores
             // 
             lblTotalProveedores.AutoSize = true;
-            lblTotalProveedores.Location = new Point(54, 88);
+            lblTotalProveedores.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTotalProveedores.Location = new Point(23, 88);
             lblTotalProveedores.Name = "lblTotalProveedores";
-            lblTotalProveedores.Size = new Size(123, 20);
+            lblTotalProveedores.Size = new Size(148, 23);
             lblTotalProveedores.TabIndex = 1;
             lblTotalProveedores.Text = "Total Provedores:";
             // 
             // btnACTUALIZAR
             // 
-            btnACTUALIZAR.Location = new Point(599, 520);
+            btnACTUALIZAR.Location = new Point(547, 507);
             btnACTUALIZAR.Name = "btnACTUALIZAR";
-            btnACTUALIZAR.Size = new Size(94, 29);
+            btnACTUALIZAR.Size = new Size(115, 42);
             btnACTUALIZAR.TabIndex = 5;
             btnACTUALIZAR.Text = "Actualizar";
             btnACTUALIZAR.UseVisualStyleBackColor = true;
@@ -95,10 +99,11 @@
             // 
             // FormsPlot1
             // 
+            FormsPlot1.BackColor = SystemColors.ControlLightLight;
             FormsPlot1.DisplayScale = 1.25F;
-            FormsPlot1.Location = new Point(12, 127);
+            FormsPlot1.Location = new Point(49, 126);
             FormsPlot1.Name = "FormsPlot1";
-            FormsPlot1.Size = new Size(1239, 365);
+            FormsPlot1.Size = new Size(1088, 365);
             FormsPlot1.TabIndex = 6;
             // 
             // FormREPORTE
@@ -106,7 +111,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(1307, 561);
+            ClientSize = new Size(1224, 561);
             Controls.Add(FormsPlot1);
             Controls.Add(btnACTUALIZAR);
             Controls.Add(lblTOTALPRODUCTOS);

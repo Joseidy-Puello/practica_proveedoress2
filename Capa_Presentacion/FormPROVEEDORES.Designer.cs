@@ -42,7 +42,7 @@
             // 
             // btnELIMINAR2
             // 
-            btnELIMINAR2.Location = new Point(248, 352);
+            btnELIMINAR2.Location = new Point(178, 336);
             btnELIMINAR2.Name = "btnELIMINAR2";
             btnELIMINAR2.Size = new Size(145, 29);
             btnELIMINAR2.TabIndex = 1;
@@ -54,7 +54,7 @@
             // 
             dgvProveedores.BackgroundColor = SystemColors.ControlLightLight;
             dgvProveedores.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvProveedores.Location = new Point(445, 103);
+            dgvProveedores.Location = new Point(365, 87);
             dgvProveedores.Name = "dgvProveedores";
             dgvProveedores.RowHeadersWidth = 51;
             dgvProveedores.Size = new Size(777, 278);
@@ -73,7 +73,7 @@
             // 
             // btnBUSCAR2
             // 
-            btnBUSCAR2.Location = new Point(248, 279);
+            btnBUSCAR2.Location = new Point(178, 272);
             btnBUSCAR2.Name = "btnBUSCAR2";
             btnBUSCAR2.Size = new Size(145, 29);
             btnBUSCAR2.TabIndex = 6;
@@ -83,14 +83,14 @@
             // 
             // txtNOMBRE2
             // 
-            txtNOMBRE2.Location = new Point(227, 206);
+            txtNOMBRE2.Location = new Point(158, 199);
             txtNOMBRE2.Name = "txtNOMBRE2";
             txtNOMBRE2.Size = new Size(184, 27);
             txtNOMBRE2.TabIndex = 9;
             // 
             // txtRNC2
             // 
-            txtRNC2.Location = new Point(227, 128);
+            txtRNC2.Location = new Point(158, 128);
             txtRNC2.Name = "txtRNC2";
             txtRNC2.Size = new Size(184, 27);
             txtRNC2.TabIndex = 10;
@@ -98,7 +98,7 @@
             // lblRNC2
             // 
             lblRNC2.AutoSize = true;
-            lblRNC2.Location = new Point(183, 135);
+            lblRNC2.Location = new Point(114, 135);
             lblRNC2.Name = "lblRNC2";
             lblRNC2.Size = new Size(38, 20);
             lblRNC2.TabIndex = 11;
@@ -107,7 +107,7 @@
             // lBLNOMBRE2
             // 
             lBLNOMBRE2.AutoSize = true;
-            lBLNOMBRE2.Location = new Point(157, 213);
+            lBLNOMBRE2.Location = new Point(88, 206);
             lBLNOMBRE2.Name = "lBLNOMBRE2";
             lBLNOMBRE2.Size = new Size(64, 20);
             lBLNOMBRE2.TabIndex = 12;
@@ -115,7 +115,7 @@
             // 
             // btnIRALISTATEMPORAL
             // 
-            btnIRALISTATEMPORAL.Location = new Point(485, 387);
+            btnIRALISTATEMPORAL.Location = new Point(365, 382);
             btnIRALISTATEMPORAL.Name = "btnIRALISTATEMPORAL";
             btnIRALISTATEMPORAL.Size = new Size(152, 29);
             btnIRALISTATEMPORAL.TabIndex = 13;
@@ -128,7 +128,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(1254, 545);
+            ClientSize = new Size(1215, 545);
             Controls.Add(btnIRALISTATEMPORAL);
             Controls.Add(lBLNOMBRE2);
             Controls.Add(lblRNC2);

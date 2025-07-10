@@ -60,6 +60,7 @@
             // 
             btnREGISTROPROVEEDORES.BackColor = SystemColors.ControlLightLight;
             btnREGISTROPROVEEDORES.FlatStyle = FlatStyle.Flat;
+            btnREGISTROPROVEEDORES.ForeColor = SystemColors.ActiveCaptionText;
             btnREGISTROPROVEEDORES.Image = (Image)resources.GetObject("btnREGISTROPROVEEDORES.Image");
             btnREGISTROPROVEEDORES.ImageAlign = ContentAlignment.MiddleLeft;
             btnREGISTROPROVEEDORES.Location = new Point(0, 86);
@@ -113,16 +114,16 @@
             panelTITULO.Dock = DockStyle.Top;
             panelTITULO.Location = new Point(70, 0);
             panelTITULO.Name = "panelTITULO";
-            panelTITULO.Size = new Size(1217, 50);
+            panelTITULO.Size = new Size(1122, 50);
             panelTITULO.TabIndex = 6;
             // 
             // pictureBox2
             // 
             pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(421, 70);
+            pictureBox2.Location = new Point(393, 45);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(561, 443);
+            pictureBox2.Size = new Size(466, 443);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 7;
             pictureBox2.TabStop = false;
@@ -132,7 +133,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(1287, 574);
+            ClientSize = new Size(1192, 574);
             Controls.Add(panelTITULO);
             Controls.Add(panelPRINCIPAL);
             Controls.Add(pictureBox2);

@@ -52,7 +52,7 @@
             // lblRNC
             // 
             lblRNC.AutoSize = true;
-            lblRNC.Location = new Point(202, 130);
+            lblRNC.Location = new Point(126, 130);
             lblRNC.Name = "lblRNC";
             lblRNC.Size = new Size(38, 20);
             lblRNC.TabIndex = 0;
@@ -61,7 +61,7 @@
             // lblNOMBRE
             // 
             lblNOMBRE.AutoSize = true;
-            lblNOMBRE.Location = new Point(176, 195);
+            lblNOMBRE.Location = new Point(100, 195);
             lblNOMBRE.Name = "lblNOMBRE";
             lblNOMBRE.Size = new Size(64, 20);
             lblNOMBRE.TabIndex = 1;
@@ -70,7 +70,7 @@
             // lblTELEFONO
             // 
             lblTELEFONO.AutoSize = true;
-            lblTELEFONO.Location = new Point(173, 261);
+            lblTELEFONO.Location = new Point(97, 254);
             lblTELEFONO.Name = "lblTELEFONO";
             lblTELEFONO.Size = new Size(67, 20);
             lblTELEFONO.TabIndex = 2;
@@ -79,7 +79,7 @@
             // lblTIPO
             // 
             lblTIPO.AutoSize = true;
-            lblTIPO.Location = new Point(201, 328);
+            lblTIPO.Location = new Point(125, 325);
             lblTIPO.Name = "lblTIPO";
             lblTIPO.Size = new Size(39, 20);
             lblTIPO.TabIndex = 3;
@@ -87,7 +87,7 @@
             // 
             // btnBUSCAR
             // 
-            btnBUSCAR.Location = new Point(171, 510);
+            btnBUSCAR.Location = new Point(97, 510);
             btnBUSCAR.Name = "btnBUSCAR";
             btnBUSCAR.Size = new Size(94, 29);
             btnBUSCAR.TabIndex = 12;
@@ -98,7 +98,7 @@
             // lnlPRODUCTO
             // 
             lnlPRODUCTO.AutoSize = true;
-            lnlPRODUCTO.Location = new Point(171, 395);
+            lnlPRODUCTO.Location = new Point(95, 391);
             lnlPRODUCTO.Name = "lnlPRODUCTO";
             lnlPRODUCTO.Size = new Size(69, 20);
             lnlPRODUCTO.TabIndex = 13;
@@ -106,7 +106,7 @@
             // 
             // TxtPRODUCTO
             // 
-            TxtPRODUCTO.Location = new Point(246, 388);
+            TxtPRODUCTO.Location = new Point(170, 384);
             TxtPRODUCTO.Name = "TxtPRODUCTO";
             TxtPRODUCTO.Size = new Size(253, 27);
             TxtPRODUCTO.TabIndex = 15;
@@ -117,17 +117,17 @@
             dgvLISTATEMPORAL.AllowUserToResizeRows = false;
             dgvLISTATEMPORAL.BackgroundColor = SystemColors.ControlLightLight;
             dgvLISTATEMPORAL.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvLISTATEMPORAL.Location = new Point(561, 119);
+            dgvLISTATEMPORAL.Location = new Point(479, 123);
             dgvLISTATEMPORAL.Name = "dgvLISTATEMPORAL";
             dgvLISTATEMPORAL.ReadOnly = true;
             dgvLISTATEMPORAL.RowHeadersWidth = 51;
-            dgvLISTATEMPORAL.Size = new Size(730, 296);
+            dgvLISTATEMPORAL.Size = new Size(701, 296);
             dgvLISTATEMPORAL.TabIndex = 16;
             dgvLISTATEMPORAL.CellMouseClick += dgvLISTATEMPORAL_CellMouseClick;
             // 
             // btnREGISTRARLISTATEMP
             // 
-            btnREGISTRARLISTATEMP.Location = new Point(388, 448);
+            btnREGISTRARLISTATEMP.Location = new Point(303, 448);
             btnREGISTRARLISTATEMP.Name = "btnREGISTRARLISTATEMP";
             btnREGISTRARLISTATEMP.Size = new Size(94, 29);
             btnREGISTRARLISTATEMP.TabIndex = 17;
@@ -147,7 +147,7 @@
             // 
             // TxtTELEFONO
             // 
-            TxtTELEFONO.Location = new Point(246, 254);
+            TxtTELEFONO.Location = new Point(170, 247);
             TxtTELEFONO.Mask = "(999)-000-0000";
             TxtTELEFONO.Name = "TxtTELEFONO";
             TxtTELEFONO.Size = new Size(253, 27);
@@ -155,7 +155,7 @@
             // 
             // TxtRNC
             // 
-            TxtRNC.Location = new Point(246, 123);
+            TxtRNC.Location = new Point(170, 123);
             TxtRNC.Mask = "999999999";
             TxtRNC.Name = "TxtRNC";
             TxtRNC.Size = new Size(253, 27);
@@ -163,7 +163,7 @@
             // 
             // btnLIMPIAR
             // 
-            btnLIMPIAR.Location = new Point(431, 510);
+            btnLIMPIAR.Location = new Point(355, 510);
             btnLIMPIAR.Name = "btnLIMPIAR";
             btnLIMPIAR.Size = new Size(94, 29);
             btnLIMPIAR.TabIndex = 21;
@@ -173,7 +173,7 @@
             // 
             // btnELIMINAR
             // 
-            btnELIMINAR.Location = new Point(303, 510);
+            btnELIMINAR.Location = new Point(228, 510);
             btnELIMINAR.Name = "btnELIMINAR";
             btnELIMINAR.Size = new Size(94, 29);
             btnELIMINAR.TabIndex = 23;
@@ -183,14 +183,14 @@
             // 
             // TxtNOMBRE
             // 
-            TxtNOMBRE.Location = new Point(246, 188);
+            TxtNOMBRE.Location = new Point(170, 188);
             TxtNOMBRE.Name = "TxtNOMBRE";
             TxtNOMBRE.Size = new Size(253, 27);
             TxtNOMBRE.TabIndex = 24;
             // 
             // btnGUARDARENBD
             // 
-            btnGUARDARENBD.Location = new Point(589, 448);
+            btnGUARDARENBD.Location = new Point(479, 448);
             btnGUARDARENBD.Name = "btnGUARDARENBD";
             btnGUARDARENBD.Size = new Size(134, 29);
             btnGUARDARENBD.TabIndex = 25;
@@ -200,7 +200,7 @@
             // 
             // btnEDITAR
             // 
-            btnEDITAR.Location = new Point(220, 448);
+            btnEDITAR.Location = new Point(155, 448);
             btnEDITAR.Name = "btnEDITAR";
             btnEDITAR.Size = new Size(94, 29);
             btnEDITAR.TabIndex = 26;
@@ -211,7 +211,7 @@
             // cmbTipoProveedor
             // 
             cmbTipoProveedor.FormattingEnabled = true;
-            cmbTipoProveedor.Location = new Point(246, 325);
+            cmbTipoProveedor.Location = new Point(170, 317);
             cmbTipoProveedor.Name = "cmbTipoProveedor";
             cmbTipoProveedor.Size = new Size(253, 28);
             cmbTipoProveedor.TabIndex = 27;
@@ -221,7 +221,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(1333, 575);
+            ClientSize = new Size(1235, 575);
             Controls.Add(cmbTipoProveedor);
             Controls.Add(btnEDITAR);
             Controls.Add(btnGUARDARENBD);
