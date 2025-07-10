@@ -8,7 +8,6 @@ namespace Capa_Negocios
     public class CNProveedor
     {
 
-
         public void GuardarListaProveedores(List<PROVEEDOR> proveedores)
         {
             connBD datos = new connBD();

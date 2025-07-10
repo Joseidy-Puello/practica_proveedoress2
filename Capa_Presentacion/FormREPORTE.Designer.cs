@@ -31,8 +31,10 @@
             lblREPORTEPROVEEDORES = new Label();
             lblLOCALES = new Label();
             lblINTERNACIONALES = new Label();
-            lblPRODUCTOS = new Label();
-            lblTOTAL = new Label();
+            lblTOTALPRODUCTOS = new Label();
+            lblTotalProveedores = new Label();
+            btnACTUALIZAR = new Button();
+            FormsPlot1 = new ScottPlot.WinForms.FormsPlot();
             SuspendLayout();
             // 
             // lblREPORTEPROVEEDORES
@@ -48,38 +50,56 @@
             // lblLOCALES
             // 
             lblLOCALES.AutoSize = true;
-            lblLOCALES.Location = new Point(446, 230);
+            lblLOCALES.Location = new Point(337, 88);
             lblLOCALES.Name = "lblLOCALES";
-            lblLOCALES.Size = new Size(61, 20);
+            lblLOCALES.Size = new Size(184, 20);
             lblLOCALES.TabIndex = 2;
-            lblLOCALES.Text = "Locales:";
+            lblLOCALES.Text = "Total Proveedores Locales:";
             // 
             // lblINTERNACIONALES
             // 
             lblINTERNACIONALES.AutoSize = true;
-            lblINTERNACIONALES.Location = new Point(446, 328);
+            lblINTERNACIONALES.Location = new Point(693, 88);
             lblINTERNACIONALES.Name = "lblINTERNACIONALES";
-            lblINTERNACIONALES.Size = new Size(112, 20);
+            lblINTERNACIONALES.Size = new Size(235, 20);
             lblINTERNACIONALES.TabIndex = 3;
-            lblINTERNACIONALES.Text = "Internacionales:";
+            lblINTERNACIONALES.Text = "Total Proveedores Internacionales:";
             // 
-            // lblPRODUCTOS
+            // lblTOTALPRODUCTOS
             // 
-            lblPRODUCTOS.AutoSize = true;
-            lblPRODUCTOS.Location = new Point(446, 419);
-            lblPRODUCTOS.Name = "lblPRODUCTOS";
-            lblPRODUCTOS.Size = new Size(78, 20);
-            lblPRODUCTOS.TabIndex = 4;
-            lblPRODUCTOS.Text = "Productos:";
+            lblTOTALPRODUCTOS.AutoSize = true;
+            lblTOTALPRODUCTOS.Location = new Point(1098, 88);
+            lblTOTALPRODUCTOS.Name = "lblTOTALPRODUCTOS";
+            lblTOTALPRODUCTOS.Size = new Size(115, 20);
+            lblTOTALPRODUCTOS.TabIndex = 4;
+            lblTOTALPRODUCTOS.Text = "Total Productos:";
             // 
-            // lblTOTAL
+            // lblTotalProveedores
             // 
-            lblTOTAL.AutoSize = true;
-            lblTOTAL.Location = new Point(446, 129);
-            lblTOTAL.Name = "lblTOTAL";
-            lblTOTAL.Size = new Size(45, 20);
-            lblTOTAL.TabIndex = 1;
-            lblTOTAL.Text = "Total:";
+            lblTotalProveedores.AutoSize = true;
+            lblTotalProveedores.Location = new Point(54, 88);
+            lblTotalProveedores.Name = "lblTotalProveedores";
+            lblTotalProveedores.Size = new Size(123, 20);
+            lblTotalProveedores.TabIndex = 1;
+            lblTotalProveedores.Text = "Total Provedores:";
+            // 
+            // btnACTUALIZAR
+            // 
+            btnACTUALIZAR.Location = new Point(599, 520);
+            btnACTUALIZAR.Name = "btnACTUALIZAR";
+            btnACTUALIZAR.Size = new Size(94, 29);
+            btnACTUALIZAR.TabIndex = 5;
+            btnACTUALIZAR.Text = "Actualizar";
+            btnACTUALIZAR.UseVisualStyleBackColor = true;
+            btnACTUALIZAR.Click += btnACTUALIZAR_Click;
+            // 
+            // FormsPlot1
+            // 
+            FormsPlot1.DisplayScale = 1.25F;
+            FormsPlot1.Location = new Point(12, 127);
+            FormsPlot1.Name = "FormsPlot1";
+            FormsPlot1.Size = new Size(1239, 365);
+            FormsPlot1.TabIndex = 6;
             // 
             // FormREPORTE
             // 
@@ -87,10 +107,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(1307, 561);
-            Controls.Add(lblPRODUCTOS);
+            Controls.Add(FormsPlot1);
+            Controls.Add(btnACTUALIZAR);
+            Controls.Add(lblTOTALPRODUCTOS);
             Controls.Add(lblINTERNACIONALES);
             Controls.Add(lblLOCALES);
-            Controls.Add(lblTOTAL);
+            Controls.Add(lblTotalProveedores);
             Controls.Add(lblREPORTEPROVEEDORES);
             Name = "FormREPORTE";
             Text = "FormREPORTE";
@@ -104,7 +126,9 @@
         private Label lblREPORTEPROVEEDORES;
         private Label lblLOCALES;
         private Label lblINTERNACIONALES;
-        private Label lblPRODUCTOS;
-        private Label lblTOTAL;
+        private Label lblTOTALPRODUCTOS;
+        private Label lblTotalProveedores;
+        private Button btnACTUALIZAR;
+        private ScottPlot.WinForms.FormsPlot FormsPlot1;
     }
 }
