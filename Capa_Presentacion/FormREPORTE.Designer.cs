@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormREPORTE));
             lblREPORTEPROVEEDORES = new Label();
             lblLOCALES = new Label();
             lblINTERNACIONALES = new Label();
@@ -35,6 +36,8 @@
             lblTotalProveedores = new Label();
             btnACTUALIZAR = new Button();
             FormsPlot1 = new ScottPlot.WinForms.FormsPlot();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // lblREPORTEPROVEEDORES
@@ -106,12 +109,24 @@
             FormsPlot1.Size = new Size(1088, 365);
             FormsPlot1.TabIndex = 6;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(12, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(60, 36);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 30;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
             // FormREPORTE
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(1224, 561);
+            Controls.Add(pictureBox1);
             Controls.Add(FormsPlot1);
             Controls.Add(btnACTUALIZAR);
             Controls.Add(lblTOTALPRODUCTOS);
@@ -119,9 +134,11 @@
             Controls.Add(lblLOCALES);
             Controls.Add(lblTotalProveedores);
             Controls.Add(lblREPORTEPROVEEDORES);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FormREPORTE";
             Text = "FormREPORTE";
             Load += FormREPORTE_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -135,5 +152,6 @@
         private Label lblTotalProveedores;
         private Button btnACTUALIZAR;
         private ScottPlot.WinForms.FormsPlot FormsPlot1;
+        private PictureBox pictureBox1;
     }
 }

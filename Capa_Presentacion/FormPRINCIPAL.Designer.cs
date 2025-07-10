@@ -45,7 +45,6 @@
             // btnLISTATEMPORAL
             // 
             btnLISTATEMPORAL.BackColor = SystemColors.ControlLightLight;
-            btnLISTATEMPORAL.FlatStyle = FlatStyle.Flat;
             btnLISTATEMPORAL.Image = (Image)resources.GetObject("btnLISTATEMPORAL.Image");
             btnLISTATEMPORAL.ImageAlign = ContentAlignment.MiddleLeft;
             btnLISTATEMPORAL.Location = new Point(0, 159);
@@ -59,7 +58,6 @@
             // btnREGISTROPROVEEDORES
             // 
             btnREGISTROPROVEEDORES.BackColor = SystemColors.ControlLightLight;
-            btnREGISTROPROVEEDORES.FlatStyle = FlatStyle.Flat;
             btnREGISTROPROVEEDORES.ForeColor = SystemColors.ActiveCaptionText;
             btnREGISTROPROVEEDORES.Image = (Image)resources.GetObject("btnREGISTROPROVEEDORES.Image");
             btnREGISTROPROVEEDORES.ImageAlign = ContentAlignment.MiddleLeft;
@@ -74,7 +72,6 @@
             // btnREPORTEPROVEEDORES
             // 
             btnREPORTEPROVEEDORES.BackColor = SystemColors.ControlLightLight;
-            btnREPORTEPROVEEDORES.FlatStyle = FlatStyle.Flat;
             btnREPORTEPROVEEDORES.Image = (Image)resources.GetObject("btnREPORTEPROVEEDORES.Image");
             btnREPORTEPROVEEDORES.ImageAlign = ContentAlignment.MiddleLeft;
             btnREPORTEPROVEEDORES.Location = new Point(3, 237);
@@ -96,6 +93,7 @@
             panelPRINCIPAL.Name = "panelPRINCIPAL";
             panelPRINCIPAL.Size = new Size(70, 574);
             panelPRINCIPAL.TabIndex = 4;
+            panelPRINCIPAL.Paint += panelPRINCIPAL_Paint;
             // 
             // pictureBox1
             // 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLISTATEMPORAL));
             lblRNC = new Label();
             lblNOMBRE = new Label();
             lblTELEFONO = new Label();
@@ -46,7 +47,9 @@
             btnGUARDARENBD = new Button();
             btnEDITAR = new Button();
             cmbTipoProveedor = new ComboBox();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dgvLISTATEMPORAL).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // lblRNC
@@ -121,7 +124,7 @@
             dgvLISTATEMPORAL.Name = "dgvLISTATEMPORAL";
             dgvLISTATEMPORAL.ReadOnly = true;
             dgvLISTATEMPORAL.RowHeadersWidth = 51;
-            dgvLISTATEMPORAL.Size = new Size(701, 296);
+            dgvLISTATEMPORAL.Size = new Size(685, 296);
             dgvLISTATEMPORAL.TabIndex = 16;
             dgvLISTATEMPORAL.CellMouseClick += dgvLISTATEMPORAL_CellMouseClick;
             // 
@@ -139,7 +142,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Modern No. 20", 19.7999973F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(319, 20);
+            label1.Location = new Point(303, 14);
             label1.Name = "label1";
             label1.Size = new Size(577, 34);
             label1.TabIndex = 18;
@@ -216,12 +219,24 @@
             cmbTipoProveedor.Size = new Size(253, 28);
             cmbTipoProveedor.TabIndex = 27;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(12, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(60, 36);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 28;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
             // FormLISTATEMPORAL
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(1235, 575);
+            Controls.Add(pictureBox1);
             Controls.Add(cmbTipoProveedor);
             Controls.Add(btnEDITAR);
             Controls.Add(btnGUARDARENBD);
@@ -240,10 +255,12 @@
             Controls.Add(lblTELEFONO);
             Controls.Add(lblNOMBRE);
             Controls.Add(lblRNC);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FormLISTATEMPORAL";
             Text = "FormLISTATEMPORAL";
             Load += FormLISTATEMPORAL_Load;
             ((System.ComponentModel.ISupportInitialize)dgvLISTATEMPORAL).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -268,5 +285,6 @@
         private Button btnGUARDARENBD;
         private Button btnEDITAR;
         private ComboBox cmbTipoProveedor;
+        private PictureBox pictureBox1;
     }
 }

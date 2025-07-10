@@ -22,6 +22,7 @@ namespace Capa_Presentacion
         {
             FormPROVEEDORES frm = new FormPROVEEDORES();
             frm.Show();
+            this.Hide();
         }
 
         private void btnLISTATEMPORAL_Click(object sender, EventArgs e)
@@ -29,12 +30,14 @@ namespace Capa_Presentacion
 
             FormLISTATEMPORAL frm = new FormLISTATEMPORAL();
             frm.Show();
+            this.Hide();
         }
 
         private void btnREPORTEPROVEEDORES_Click(object sender, EventArgs e)
         {
             FormREPORTE frm = new FormREPORTE();
             frm.Show();
+            this.Hide();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -55,6 +58,11 @@ namespace Capa_Presentacion
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelPRINCIPAL_Paint(object sender, PaintEventArgs e)
         {
 
         }

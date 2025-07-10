@@ -86,7 +86,7 @@ namespace Capa_Presentacion
             barras.ValueLabelStyle.PointFilled = true; // Set to true if you want points to be filled
             barras.ValueLabelStyle.ForeColor = new ScottPlot.Color(30, 144, 255, 150); // Color del texto de las etiquetas de valor
             barras.ValueLabelStyle.BorderColor = new ScottPlot.Color(0, 0, 0); // Bordes negros
-            
+
 
             // Posicionar etiquetas del eje X
             FormsPlot1.Plot.Axes.Bottom.TickGenerator = new ScottPlot.TickGenerators.NumericManual(posiciones, etiquetas);
@@ -100,6 +100,13 @@ namespace Capa_Presentacion
 
             // Mostrar el gráfico
             FormsPlot1.Refresh();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            FormPRINCIPAL form = new FormPRINCIPAL();
+            form.Show();
+            this.Dispose();
         }
     }
 }

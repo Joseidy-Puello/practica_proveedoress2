@@ -52,7 +52,7 @@ namespace Capa_Presentacion
         private void btnBUSCAR2_Click(object sender, EventArgs e)
         {
 
-            string rnc = txtRNC2.Text.Trim();
+            string rnc = mkdtxtRNC.Text.Trim();
 
             if (string.IsNullOrWhiteSpace(rnc))
             {
@@ -120,6 +120,18 @@ namespace Capa_Presentacion
         {
             FormLISTATEMPORAL formTemporal = new FormLISTATEMPORAL();
             formTemporal.ShowDialog();
+        }
+
+        private void mkdtxtRNC_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            FormPRINCIPAL form = new FormPRINCIPAL();
+            form.Show();
+            this.Dispose();
         }
     }
 }

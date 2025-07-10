@@ -2,6 +2,7 @@ using System.Data;
 using System.Diagnostics.Eventing.Reader;
 using Capa_Datos;
 using Capa_Negocios;
+using Capa_Presentacion;
 using Microsoft.Data.SqlClient;
 
 namespace Capa.Presentacion
@@ -52,7 +53,7 @@ namespace Capa.Presentacion
                 TxtTELEFONO.Text = proveedorEncontrado.TELEFONO;
                 cmbTipoProveedor.Text = proveedorEncontrado.TIPO;
                 TxtPRODUCTO.Text = proveedorEncontrado.PRODUCTO;
-                
+
 
                 // Seleccionar la fila correspondiente en el DataGridView
                 for (int i = 0; i < dgvLISTATEMPORAL.Rows.Count; i++)
@@ -138,7 +139,7 @@ namespace Capa.Presentacion
                     proveedor.TELEFONO,
                     proveedor.TIPO,
                     proveedor.PRODUCTO
-                    
+
                 );
             }
 
@@ -148,7 +149,7 @@ namespace Capa.Presentacion
             TxtTELEFONO.Clear();
             cmbTipoProveedor.SelectedIndex = -1;
             TxtPRODUCTO.Clear();
-            
+
 
             // Quitar selección azul
             dgvLISTATEMPORAL.ClearSelection();
@@ -210,7 +211,7 @@ namespace Capa.Presentacion
                     proveedor.TELEFONO,
                     proveedor.TIPO,
                     proveedor.PRODUCTO
-                    
+
                 );
             }
 
@@ -223,7 +224,7 @@ namespace Capa.Presentacion
             TxtTELEFONO.Clear();
             cmbTipoProveedor.SelectedIndex = -1;
             TxtPRODUCTO.Clear();
-            
+
         }
 
         private void btnGUARDARENBD_Click(object sender, EventArgs e)
@@ -278,7 +279,7 @@ namespace Capa.Presentacion
             dgvLISTATEMPORAL.Columns.Add("TELEFONO", "TELEFONO");
             dgvLISTATEMPORAL.Columns.Add("TIPO", "TIPO");
             dgvLISTATEMPORAL.Columns.Add("PRODUCTO", "PRODUCTO");
-            
+
 
             dgvLISTATEMPORAL.ClearSelection();
             dgvLISTATEMPORAL.CurrentCell = null;
@@ -363,9 +364,16 @@ namespace Capa.Presentacion
             TxtTELEFONO.Clear();
             cmbTipoProveedor.SelectedIndex = -1;
             TxtPRODUCTO.Clear();
-            
+
 
             MessageBox.Show("Proveedor actualizado correctamente.", "Edición exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            FormPRINCIPAL form = new FormPRINCIPAL();
+            form.Show();
+            this.Dispose();
         }
     }
 
