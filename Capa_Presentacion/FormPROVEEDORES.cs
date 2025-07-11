@@ -133,5 +133,34 @@ namespace Capa_Presentacion
             form.Show();
             this.Dispose();
         }
+
+        private void btnLIMPIAR2_Click(object sender, EventArgs e)
+        {
+            // Limpiar campos
+            foreach (Control control in this.Controls)
+            {
+                if (control is TextBox txt) txt.Clear();
+                if (control is MaskedTextBox msk) msk.Clear();
+                if (control is ComboBox cmb) cmb.SelectedIndex = -1;
+            }
+
+            // Limpiar selección de dgvBASEDEDATOS y recargar datos desde la base
+            if (dgvProveedores != null)
+            {
+                dgvProveedores.ClearSelection();
+                dgvProveedores.CurrentCell = null;
+
+                // Recargar datos desde SQL Server
+                using (SqlConnection conn = new SqlConnection("Server=.;DataBase=PROVEEDORES;Integrated Security=true;TrustServerCertificate=True"))
+                {
+                    conn.Open();
+                    string query = "SELECT RNC, NOMBRE, TELEFONO, PRODUCTO, TIPO FROM PROVEEDOR";
+                    SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    dgvProveedores.DataSource = dt;
+                }
+            }
+        }
     }
 }

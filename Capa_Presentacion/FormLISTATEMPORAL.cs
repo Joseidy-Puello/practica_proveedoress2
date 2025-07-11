@@ -159,22 +159,31 @@ namespace Capa.Presentacion
 
         private void btnLIMPIAR_Click(object sender, EventArgs e)
         {
+            // Limpiar campos de entrada
             foreach (Control control in this.Controls)
             {
+                if (control is TextBox txt) txt.Clear();
+                if (control is MaskedTextBox msk) msk.Clear();
+                if (control is ComboBox cmb) cmb.SelectedIndex = -1;
+            }
 
-                if (control is TextBox)
-                {
-                    ((TextBox)control).Clear();
-                }
+            // Quitar selección visual del DataGridView
+            if (dgvLISTATEMPORAL != null)
+            {
+                dgvLISTATEMPORAL.ClearSelection();
+                dgvLISTATEMPORAL.CurrentCell = null;
 
-                if (control is MaskedTextBox)
+                // ?? Volver a cargar la lista completa (sin filtrar ni alterar)
+                dgvLISTATEMPORAL.Rows.Clear();
+                foreach (var proveedor in listaProveedoresTemporal)
                 {
-                    ((MaskedTextBox)control).Clear();
-                }
-
-                if (control is ComboBox)
-                {
-                    ((ComboBox)control).SelectedIndex = -1;
+                    dgvLISTATEMPORAL.Rows.Add(
+                        proveedor.RNC,
+                        proveedor.NOMBRE,
+                        proveedor.TELEFONO,
+                        proveedor.PRODUCTO,
+                        proveedor.TIPO
+                    );
                 }
             }
         }
@@ -237,16 +246,13 @@ namespace Capa.Presentacion
 
             try
             {
-                // Esta parte ya la tienes: guarda los proveedores en la BD.
+                // guarda los proveedores en la BD.
                 cnProveedor.GuardarListaProveedores(listaProveedoresTemporal);
                 MessageBox.Show("Proveedores guardados en la Base de Datos exitosamente.");
 
-                // --- INICIO DE LA MODIFICACIÓN ---
-
-                // 1. Marcamos el resultado como "OK" para avisar que todo salió bien.
+                //  Marcamos el resultado como "OK" para avisar que todo salió bien.
                 this.DialogResult = DialogResult.OK;
 
-                // 2. Cerramos el formulario de la lista temporal.
                 this.Close();
 
             }

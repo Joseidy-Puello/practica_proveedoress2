@@ -38,13 +38,14 @@
             lBLNOMBRE2 = new Label();
             mkdtxtRNC = new MaskedTextBox();
             pictureBox1 = new PictureBox();
+            btnLIMPIAR2 = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvProveedores).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // btnELIMINAR2
             // 
-            btnELIMINAR2.Location = new Point(178, 384);
+            btnELIMINAR2.Location = new Point(178, 328);
             btnELIMINAR2.Name = "btnELIMINAR2";
             btnELIMINAR2.Size = new Size(145, 29);
             btnELIMINAR2.TabIndex = 1;
@@ -76,7 +77,7 @@
             // 
             // btnBUSCAR2
             // 
-            btnBUSCAR2.Location = new Point(178, 321);
+            btnBUSCAR2.Location = new Point(178, 269);
             btnBUSCAR2.Name = "btnBUSCAR2";
             btnBUSCAR2.Size = new Size(145, 29);
             btnBUSCAR2.TabIndex = 6;
@@ -86,7 +87,7 @@
             // 
             // txtNOMBRE2
             // 
-            txtNOMBRE2.Location = new Point(158, 240);
+            txtNOMBRE2.Location = new Point(158, 216);
             txtNOMBRE2.Name = "txtNOMBRE2";
             txtNOMBRE2.Size = new Size(184, 27);
             txtNOMBRE2.TabIndex = 9;
@@ -94,7 +95,7 @@
             // lblRNC2
             // 
             lblRNC2.AutoSize = true;
-            lblRNC2.Location = new Point(114, 173);
+            lblRNC2.Location = new Point(114, 151);
             lblRNC2.Name = "lblRNC2";
             lblRNC2.Size = new Size(38, 20);
             lblRNC2.TabIndex = 11;
@@ -103,7 +104,7 @@
             // lBLNOMBRE2
             // 
             lBLNOMBRE2.AutoSize = true;
-            lBLNOMBRE2.Location = new Point(88, 247);
+            lBLNOMBRE2.Location = new Point(88, 223);
             lBLNOMBRE2.Name = "lBLNOMBRE2";
             lBLNOMBRE2.Size = new Size(64, 20);
             lBLNOMBRE2.TabIndex = 12;
@@ -111,7 +112,7 @@
             // 
             // mkdtxtRNC
             // 
-            mkdtxtRNC.Location = new Point(158, 166);
+            mkdtxtRNC.Location = new Point(158, 144);
             mkdtxtRNC.Mask = "999999999";
             mkdtxtRNC.Name = "mkdtxtRNC";
             mkdtxtRNC.Size = new Size(184, 27);
@@ -128,12 +129,23 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
+            // btnLIMPIAR2
+            // 
+            btnLIMPIAR2.Location = new Point(178, 386);
+            btnLIMPIAR2.Name = "btnLIMPIAR2";
+            btnLIMPIAR2.Size = new Size(145, 29);
+            btnLIMPIAR2.TabIndex = 30;
+            btnLIMPIAR2.Text = "Limpiar";
+            btnLIMPIAR2.UseVisualStyleBackColor = true;
+            btnLIMPIAR2.Click += btnLIMPIAR2_Click;
+            // 
             // FormPROVEEDORES
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(1215, 545);
+            Controls.Add(btnLIMPIAR2);
             Controls.Add(pictureBox1);
             Controls.Add(mkdtxtRNC);
             Controls.Add(lBLNOMBRE2);
@@ -165,5 +177,6 @@
         private Label lBLNOMBRE2;
         private MaskedTextBox mkdtxtRNC;
         private PictureBox pictureBox1;
+        private Button btnLIMPIAR2;
     }
 }

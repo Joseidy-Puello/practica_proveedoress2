@@ -77,7 +77,6 @@ namespace Capa_Negocios
                 int exists = (int)checkCmd.ExecuteScalar();
                 if (exists > 0)
                 {
-                    // Puedes lanzar un error o simplemente ignorar el duplicado
                     throw new InvalidOperationException($"El RNC/ID '{proveedor.ObtenerIdentificadorPrincipal()}' ya existe en la base de datos.");
                 }
             }
