@@ -41,8 +41,7 @@ namespace Capa_Presentacion
             }
         }
 
-        // --- MÉTODO RENOMBRADO ---
-        // Este es el evento para tu nuevo botón "btnIRALISTATEMPORAL"
+        
         private void btnIRALISTATEMPORAL_Click(object sender, EventArgs e)
         {
             FormLISTATEMPORAL formTemporal = new FormLISTATEMPORAL();

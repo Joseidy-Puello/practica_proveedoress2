@@ -213,6 +213,7 @@
             // 
             // cmbTipoProveedor
             // 
+            cmbTipoProveedor.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbTipoProveedor.FormattingEnabled = true;
             cmbTipoProveedor.Location = new Point(170, 317);
             cmbTipoProveedor.Name = "cmbTipoProveedor";

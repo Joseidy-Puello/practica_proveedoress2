@@ -35,10 +35,12 @@
             panelPRINCIPAL = new Panel();
             pictureBox1 = new PictureBox();
             panelTITULO = new Panel();
+            pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             panelPRINCIPAL.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panelTITULO.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
@@ -108,12 +110,28 @@
             // 
             // panelTITULO
             // 
+            panelTITULO.BackColor = SystemColors.ActiveCaption;
+            panelTITULO.Controls.Add(pictureBox3);
             panelTITULO.Controls.Add(pictureBox1);
             panelTITULO.Dock = DockStyle.Top;
             panelTITULO.Location = new Point(70, 0);
             panelTITULO.Name = "panelTITULO";
             panelTITULO.Size = new Size(1122, 50);
             panelTITULO.TabIndex = 6;
+            panelTITULO.Paint += panelTITULO_Paint;
+            panelTITULO.MouseDown += panelTITULO_MouseDown;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(1056, 3);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(66, 44);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 6;
+            pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // pictureBox2
             // 
@@ -135,12 +153,14 @@
             Controls.Add(panelTITULO);
             Controls.Add(panelPRINCIPAL);
             Controls.Add(pictureBox2);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FormPRINCIPAL";
             Text = "FormPRINCIPAL";
             Load += FormPRINCIPAL_Load;
             panelPRINCIPAL.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panelTITULO.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
@@ -154,5 +174,6 @@
         private PictureBox pictureBox1;
         private Panel panelTITULO;
         private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
     }
 }

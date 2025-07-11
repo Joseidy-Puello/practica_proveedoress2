@@ -67,7 +67,7 @@ namespace Capa.Presentacion
                     }
                 }
 
-                MessageBox.Show("Proveedor encontrado y cargado en la lista.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                // MessageBox.Show("Proveedor encontrado y cargado en la lista.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -143,7 +143,7 @@ namespace Capa.Presentacion
                 );
             }
 
-            // Limpiar campos
+
             TxtRNC.Clear();
             TxtNOMBRE.Clear();
             TxtTELEFONO.Clear();
@@ -159,7 +159,7 @@ namespace Capa.Presentacion
 
         private void btnLIMPIAR_Click(object sender, EventArgs e)
         {
-            // Limpiar campos de entrada
+
             foreach (Control control in this.Controls)
             {
                 if (control is TextBox txt) txt.Clear();
@@ -173,7 +173,7 @@ namespace Capa.Presentacion
                 dgvLISTATEMPORAL.ClearSelection();
                 dgvLISTATEMPORAL.CurrentCell = null;
 
-                // ?? Volver a cargar la lista completa (sin filtrar ni alterar)
+                // Volver a cargar la lista completa (sin filtrar ni alterar)
                 dgvLISTATEMPORAL.Rows.Clear();
                 foreach (var proveedor in listaProveedoresTemporal)
                 {
@@ -227,7 +227,7 @@ namespace Capa.Presentacion
             dgvLISTATEMPORAL.ClearSelection();
             dgvLISTATEMPORAL.CurrentCell = null;
 
-            // Limpiar campos
+
             TxtRNC.Clear();
             TxtNOMBRE.Clear();
             TxtTELEFONO.Clear();
@@ -379,6 +379,11 @@ namespace Capa.Presentacion
         {
             FormPRINCIPAL form = new FormPRINCIPAL();
             form.Show();
+            this.Dispose();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
             this.Dispose();
         }
     }
